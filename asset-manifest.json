@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shop-in-react/static/css/main.308e3523.css",
-    "main.js": "/shop-in-react/static/js/main.573a99d9.js",
+    "main.js": "/shop-in-react/static/js/main.0d68ecc8.js",
     "static/media/Comfortaa-Medium.ttf": "/shop-in-react/static/media/Comfortaa-Medium.e26e46e9ed19fd463a58.ttf",
     "static/media/Comfortaa-Light.ttf": "/shop-in-react/static/media/Comfortaa-Light.8d7e182e392e617a868f.ttf",
     "static/media/StoreLogo-01-01.svg": "/shop-in-react/static/media/StoreLogo-01-01.3e829fdaee24fd00244a.svg",
@@ -9,10 +9,10 @@
     "static/media/corzina.svg": "/shop-in-react/static/media/corzina.5b59954f929703daf948.svg",
     "index.html": "/shop-in-react/index.html",
     "main.308e3523.css.map": "/shop-in-react/static/css/main.308e3523.css.map",
-    "main.573a99d9.js.map": "/shop-in-react/static/js/main.573a99d9.js.map"
+    "main.0d68ecc8.js.map": "/shop-in-react/static/js/main.0d68ecc8.js.map"
   },
   "entrypoints": [
     "static/css/main.308e3523.css",
-    "static/js/main.573a99d9.js"
+    "static/js/main.0d68ecc8.js"
   ]
 }
