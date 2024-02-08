@@ -10,15 +10,39 @@ function GoodsCard (props){
  
     } = props
 
-    const img = props.granted[0].images.background
     const price = props.price.finalPrice
-    const descr = props.granted[0].description // 
+
+
+    
+    function images()
+    {
+        if(props.granted.length){
+        return props.granted[0].images.background
+        }
+        else {
+            return `https://via.placeholder.com/200x280?text=NO IMG`
+        }
+    }
+
+    images()
+
+
+
+
+    
+  
+
+
+
+
 
     return   <div className ="card">
     
     <div className="card__poster">
     
-   <img className= "card__img" src={img} alt="poster" />
+   <img className= "card__img" 
+   src={images()} 
+   alt="poster" />
 
    </div>
    <div className="card__poster__type"><p>{mainType}</p></div>
