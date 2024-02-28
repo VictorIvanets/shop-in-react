@@ -1,17 +1,19 @@
 import GoodsCard from "./GoodsCard" 
-import React, {useState} from "react"
+import React, {useState, useContext} from "react"
+import {ShopContext} from "../context"
 
 
 
 
 
 
-function GoodsList (props){
+function GoodsList (){
 
-const {goods = [], addToCorzina = Function.prototype, closeAlert = Function.prototype} = props
+    const {goods = []} = useContext(ShopContext)
+
+
+
 let [quantity, quantityState] = useState("16")
-
-console.log(quantity)
 
 
 const PlusQ = ()=>{
@@ -33,8 +35,7 @@ const VaidQuantity = () => {
 VaidQuantity()
 
 
-
-    return   <div className="boxcards">
+return   <div className="boxcards">
 <div className="quantity">
 
 <p>введіть кількість позицій</p>
@@ -55,13 +56,8 @@ className="boxcards__btn">+</button>
 </div>
     <div className ="boxcard">
     
-    {goods.length ? (
-    [...goods].splice(0, quantity)
-        ).map(item => (<GoodsCard 
-    key={item.offerId}{...item} 
-    addToCorzina={addToCorzina}
-    closeAlert={closeAlert}
-    
+    {goods.length ? ([...goods].splice(0, quantity)).map(item => (<GoodsCard key={item.offerId}{...item} 
+
     />))
     : <div className="nothing"><h3>Нічого не знайдено, <br/> або немає підключення до мережі</h3></div>
     }

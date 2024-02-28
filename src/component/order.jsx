@@ -13,13 +13,13 @@ return <div className="orderAll">
 
 
 {
-// order.length ? 
+
 
 order.map(item => (<OrderItem key={item.offerId} 
          {...item} />
 
         )) 
-        // : <h1  className="basketcollection__item">Корзина пуста</h1>
+
 
         }
 

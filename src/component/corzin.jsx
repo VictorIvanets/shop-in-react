@@ -1,6 +1,18 @@
+import {useContext} from "react"
+import {ShopContext} from '../context'
 
-function Corz(props){
-    const {quantity = 0, handeBasketShow = Function.prototype} = props
+
+
+
+function Corz(){
+
+    const {
+        order,
+        handeBasketShow,    
+    } = useContext(ShopContext)
+
+
+   const quantity = order.length
 
     return <div className="corz" onClick={handeBasketShow}>
         {quantity ? <h2 className="corz__num">{quantity}</h2> : null}

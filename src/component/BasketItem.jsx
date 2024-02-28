@@ -1,25 +1,23 @@
 
-import {useEffect, useState} from "react"
+import {useContext} from "react"
+import {ShopContext} from '../context'
+
 
 function BasketItem(props){
 
-    const{
+const{
         offerId,
         displayName,
         quantity,
         price,
-        removeFromBasket = Function.prototype,
-        addBasketItem = Function.prototype,
-        remBasketItem = Function.prototype,
-
     } = props
 
-    // const addOrdetquantity = (quantity)=>{
-    //     useState(quantity ++)
-    // }
 
-    // const img = props.granted[0].images.background
-    // const price = props.price.finalPrice
+const {removeFromBasket, 
+    addBasketItem, 
+    remBasketItem,
+} = useContext(ShopContext)
+
 
 return <div  className="basketcollection__item">
 

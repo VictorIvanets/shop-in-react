@@ -1,3 +1,6 @@
+import {useContext} from 'react'
+import {ShopContext} from '../context'
+
 function GoodsCard (props){
 
 
@@ -6,12 +9,11 @@ function GoodsCard (props){
         offerId,
         displayName,
         displayType,
-        addToCorzina = Function.prototype,
- 
     } = props
 
-    const price = props.price.finalPrice
+        const {addToCorzina} = useContext(ShopContext)
 
+    const price = props.price.finalPrice
 
     
     function images()
